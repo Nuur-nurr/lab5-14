@@ -1,0 +1,15 @@
+replicaCount: 
+image:
+  repository: lab5-14
+  tag: "1.1"
+service:
+  nodePort: 30080
+config:
+  greeting: 
+  student: 
+  variant: ""
+db:
+  enabled: true
+  name: appdb
+  user: appuser
+  password: pass-14

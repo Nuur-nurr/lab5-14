@@ -1,0 +1,10 @@
+replicaCount: 1
+service:
+  nodePort: 30080
+config:
+  greeting: "Updated"
+  student: "Shakirova"
+  variant: "14"
+image:
+  repository: lab5-14
+  tag: "1.1"

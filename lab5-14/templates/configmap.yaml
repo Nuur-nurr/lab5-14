@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  GREETING: {{ .Values.config.greeting | quote }}
+  STUDENT: {{ .Values.config.student | quote }}
+  VARIANT: {{ .Values.config.variant | quote }}
+  DB_HOST: {{ .Release.Name }}-db
+  DB_NAME: "appdb"
+  DB_USER: "appuser"
